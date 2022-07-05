@@ -73,6 +73,13 @@ body {
 	margin: 16px;
 }
 
+#cider_img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+    width:66%;
+}
+
 .centered_paragraph {
 	text-align: center;
 }
