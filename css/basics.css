@@ -102,3 +102,9 @@ body {
     border:5px solid teal;
     margin-bottom:32px
 }
+
+#out_of_office {
+	margin: 32px;
+	border: 3px outset teal;
+	padding: 8px;
+}
