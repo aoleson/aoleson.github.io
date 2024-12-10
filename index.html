@@ -1,103 +1,421 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>Dr. Alannah Oleson | University of Denver</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/basics.css">
-<link rel="icon" href="./images/greyLogo_5ptrect.png">
-<script src="js/basics.js"></script>
+<!--
+    Plain-Academic template by Vasilios Mavroudis, with additions by Isabel Papadimitriou
+    Modified by Alannah Oleson
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
 
+<html lang="en">
+<head>
+  <title>Dr. Alannah Oleson | University of Denver</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./img/greyLogo_5ptrect.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+</head>
 <body>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-teal w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
 
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    			<span class="sr-only">Toggle navigation</span>
+    			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+    		</button>
+		</div>
 
-  <div class="w3-container">
-  	<img id="headshot" class="w3-round" src="./images/hs_update.jpg" alt="Alannah Oleson profile picture">
-    <h3 id="sidebar_name"><b>Alannah Oleson</b></h3>
-    <h4 id="sidebar_pronouns">they/them // all</h4>
-    <p id="sidebar_info">
-      University of Denver
-      <br/>
-      alannah.oleson@du.edu
-    </p>
-  </div>
-
-  <hr style="width:100%;border:1px solid white;margin:auto;margin-bottom:32px;" class="w3-round">
-
-  <div class="w3-bar-block">
-    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">About</a> 
-    <!--a href="./news.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">News + Updates</a--> 
-    <!--a href="./projects.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Projects</a-->
-    <a href="./pubs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Publications</a> 
-    <a href="./awards.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Awards + Honors</a>  
-    <a href="./contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Contact</a>
-  </div>  
-
-  <!-- div class="w3-bar-block">
-	 <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Design + Photography</a>
-  </div -->
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#communities">Communities</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#contact">Contact</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
   
-  <div id="social-links" class="w3-bar-block centered_paragraph">
-    <a href="https://medium.com/@OAlannah" target="_blank"><i class="fa fa-medium w3-hover-opacity"></i></a> &nbsp;
-    <a href="https://twitter.com/OAlannah" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a> &nbsp;
-    <a href="https://www.linkedin.com/in/aoleson/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a> &nbsp;
-    <a href="https://github.com/aoleson" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a> &nbsp;
-    <a href="mailto:alannah.oleson@du.edu" target="_blank"><i class="fa fa-envelope w3-hover-opacity"></i></a> 
-  </div>
+  <!-- Page Content -->
+    <div class="container">
 
-</nav>
+        <div class="row">
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-teal w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-teal w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Alannah Oleson</span>
-</header>
+            <!-- Contact Info on the Sidebar -->
+            <div class="col-md-3">
+                <img class="img-responsive" src="img/hs_update.jpg" alt="A late 20s person with short dark hair, a bright yellow jacket, and a purple button down shirt smiling while holding a bouquet of sunflowers."><br>
+                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Alannah "AL" Oleson</b></div><br>
+                <p><b>they / any pronouns</b>
+                <p><b>alannah.oleson at du.edu</b><br>
+                <p>Assistant Professor<br>
+                Computer Science<br>
+                University of Denver
+                </p>
+                <dd><a href="https://scholar.google.com/citations?user=boWvsg8AAAAJ&hl=en">Google Scholar</a></dd> 
+                <dd><a href="https://www.linkedin.com/in/aoleson/">LinkedIn</a></dd>
+                <dd><a href="https://medium.com/@OAlannah">Medium</a></dd>
+                <dd><a href="https://github.com/aoleson">GitHub</a></dd>
+                <dd><a href="https://twitter.com/OAlannah">Twitter</a></dd>
+                <dd><a href="./papers/AlannahOleson_CV.pdf" target="_blank">CV (updated Oct'24)</a></dd>
+            </div>
+            
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px;margin-bottom:40px">
+            <!-- Entries Column -->
+            <div class="col-md-9" style="height: 100vh;">
+                
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px">
-    <h1 class="w3-jumbo"><b>HCI + Design + Computing Education.</b></h1>
-    <hr class="w3-round teal_divider">
+                <!-- Intro Text -->
+                <div style="margin-top:3%; text-align:justify;">                
+					<p>I am a <b>critical HCI education researcher</b>. I pursue ethical, equitable, and liberatory technology futures by envisioning novel pedagogies for critical design education and exploring ways to broaden participation within post-secondary CS learning contexts. My interdisciplinary work draws upon ideas from human-computer interaction (HCI), computing education research, design theory & methods, accessibility, information science, and software engineering. I often partner with communities of HCI and computing educators, working to identify pedagogical challenges and evaluate potential solutions. I employ qualitative and design research methods to deeply explore these contexts and the experiences of the people within them.</p>
+
+                    <p>In Fall 2024, I started as an Assistant Professor in Computer Science at the <a href="https://ritchieschool.du.edu/academics-education/departments/computer-science" target="_blank">Ritchie School of Engineering and Computer Science</a> at the <a href="https://www.du.edu/" target="_blank">University of Denver</a>. Previously, I worked with <a href="https://faculty.washington.edu/ajko/">Amy J. Ko</a> at the University of Washington Information School for my doctoral studies and <a href="https://web.engr.oregonstate.edu/~burnett/">Margaret M. Burnett</a> at Oregon State University CS for my undergraduate research.</p>
+
+                    <p> &#11088; <b>I am recruiting masters and Ph.D. students to start in Fall 2025!</b> &#11088; If you want to work with me, send me an email with your CV and draft statement of interest attached. Read more about the <a href="https://bulletin.du.edu/graduate/schoolscollegesanddivisions/danielfelixritchieschoolofengineeringandcomputerscience/computerscience/">DU CS graduate programs</a>, and learn more about <a href="https://www.du.edu/academics/admission-steps/computer-science-phd-2024-2025">PhD admission requirements and deadlines</a> (DU has rolling admissions).</p>
+					
+                </div>
+
+
+                <!-- News -->
+                <div style="margin-top:5%; text-align:justify;">                
+                    <h1 id="news">News & Talks</h1>
+                    <div class="col" style="max-height: 200px; overflow-y: scroll; border-color: black; border-style: solid;border-width: 1px; border-left: 0; border-right: 0; padding: 1em">    
+                        <p><b>Nov 2024:</b> I joined the editorial board of <a href="https://dl.acm.org/journal/TOCE">ACM Transactions on Computing Education</a> as an Associate Editor for HCI education and critical computing research.</p>
+                        <p><b>Sept 2024:</b> Started at the University of Denver as an Assistant Professor in CS. If you're in the Denver area or interested in collaborating, please reach out!</p>
+                        <p><b>March 2024:</b> The first edition of <a href="https://bookish.press/tac">Teaching Accessible Computing</a> is out! It contains 16 chapters on how to integrate accessibility topics into CS courses.</p>
+                        <p><b>Dec 2023:</b> Successfully defended my dissertation <a href="https://www.proquest.com/docview/2915914933/92B9C236A4D34157PQ/1?accountid=14608&sourcetype=Dissertations%20&%20Theses">Integrating Inclusive Design and Computing Education</a>! I'll spend the next few months wrapping up projects as a postdoc at the <a href="https://www.computinged.uw.edu/">Center for Learning, Computing, and Imagination</a>.</p>
+                        <p></p>
+                    </div>
+                </div>
+
+
+                <!-- Research -->
+                <div style="margin-top:5%; text-align:justify;">
+                    <h1 id="research">Research</h1>
+
+                    <h3>Lab</h3>                
+                    <p>I lead the TEACCUP lab at the University of Denver. We conduct research around <u>T</u>eaching <u>E</u>thical <u>A</u>wareness, <u>C</u>ritical <u>C</u>omputing, and <u>U</u>nderstanding <u>P</u>eople in computing education contexts. (Lab website coming soon)</p>
+                    
+                    <h3>Research Interests</h3>
+                    
+                    <h4>Critical Human-Computer Interaction (HCI) & Design Pedagogy</h4>
+                    <ul>
+                        <li>How might we enable computing students to think more critically about the technologies they create and the real-world impacts of their design decisions?</li> 
+                        <li>What kinds of pedagogical interventions might help students recognize and mitigate technological design biases? </li>
+                    </ul>
+                    <p>This branch of my research develops and evaluates theoretically-grounded pedagogical methods for teaching accessiblity, inclusive design, and critical thinking in computing education contexts.</p>
+
+                    <h4>CS Educator Knowledge Development</h4>
+                    <ul>
+                        <li>What do computing educators need to know to effectively teach critical & ethical computing topics?</li> 
+                        <li>What resources and supports might CS educators need to develop these competencies?</li>
+                        <li>How can educator communities (such as communities of practice) support each other in developing and sustaining knowledge?</li>
+                    </ul>
+                    <p>This branch of my research explores the pedagogical content knowledge that educators develop as they become experts in teaching critical computing topics, with a specific focus on accessibility and inclusive design knowledge.</p>
+
+                    <h4>Theoretical Foundations for Computing Design Education</h4>
+                    <ul>
+                        <li>How do design and computing education intersect?</li> 
+                        <li>How is the work of computing design similar to (different than) other applied design fields?</li>
+                        <li>What "lenses" might we leverage to better understand how biases and values become embedded in designed artifacts?</li>
+                    </ul>
+                    <p>This branch of my research develops new theoretical models for understanding the intersection of design and computing within educational contexts. This work tends to draw on interdisciplinary expertise (e.g. critical theory, information science, translation studies), enabling unique perspectives for making sense of how computing students learn to design technology.</p>
+
+                    <h4>Queering Computing Education & Technology Design</h4>
+                    <ul>
+                        <li>How do students and educators with non-normative identities interact with computing education?</li> 
+                        <li>How can identity be (explicitly or implicitly) encoded through the design of technology?</li> 
+                        <li>How might we challenge & subvert technology design norms to better support users who exist outside normative assumptions?</li>
+                    </ul>
+                    <p>This branch of my research explores how people differentially experience and navigate both the norms of computing education (which is known to privilege some identities over others) and technological design norms (which tend to assume normative capabilities, contexts, and identities of users). Understanding these experiences can help us identify and challenge implicit assumptions in technological contexts, supporting efforts to broaden participation in computing and create more inclusive technologies.</p> 
+
+                </div>
+
+
+                <!-- Publications -->
+                <div style="margin-top:5%; text-align:justify;">    
+                    <h1 id="publications">Publications</h1>
+
+                    <p>Below are a few of my most recent publications. All conference proceedings listed are strictly peer-reviewed, archival works.</p>
+
+                    <p>For a full list of my papers, refer to <a href="./pubs.html">my publications page</a>.</p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/cohen-helpSeeking.pdf">Factors Influencing the Social Help-Seeking Behavior of Introductory Programming Students</a> <br>
+                        Anael K. Cohen, <b>Alannah Oleson</b>, Amy J. Ko (2024) <br>
+                        ACM Transactions on Computing Education (TOCE) <br> 
+                        [<a href="https://dl.acm.org/doi/full/10.1145/3639059">ACM DL Link</a>] <br>
+                    </p>
+                    
+                    <p style="margin-top:3%;">
+                        <a href="./papers/tochi22-CiderAssumptionElicitationTechnique.pdf">Teaching Inclusive Design Skills with the CIDER Assumption Elicitation Technique</a> <br>
+                        <b>Alannah Oleson</b>, Meron Solomon, Christopher Perdriau, Amy J. Ko (2023) <br>
+                        ACM Transactions on Computer-Human Interaction (TOCHI) <br>
+                        [<a href="https://dl.acm.org/doi/10.1145/3549074">ACM DL Link</a>] [<a href="https://medium.com/bits-and-behavior/beyond-average-users-building-inclusive-design-skills-with-the-cider-technique-413969544e6d?source=friends_link&sk=6c9184c8a88feae058cfb073a44985f7">Blog Post Summary</a>]<br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <b>&#127942; Best Paper Award</b> <br>
+                        <a href="./papers/Salac2023AdolescentAlgorithmicFairness.pdf">Funds of Knowledge used by Adolescents of Color in Scaffolded Sensemaking around Algorithmic Fairness</a> <br>
+                        Jean Salac, <b>Alannah Oleson</b>, Lena Armstrong, Audrey Le Meur, Amy J. Ko (2023) <br>
+                        ACM International Computing Education Research Conference (ICER) <br>
+                        [<a href="https://dl.acm.org/doi/10.1145/3568813.3600110">ACM DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/icer22-DecadeOfDemographicsReview.pdf">A Decade of Demographics in Computing Education Research: A Critical Review of Trends in Collection, Reporting, and Use</a> <br>
+                        <b>Alannah Oleson</b>*, Benjamin Xie*, Jean Salac, Jayne Everson, F. Megumi Kivuva, Amy J. Ko (2022) <br>
+                        ACM International Computing Education Research Conference (ICER) <br>
+                        [<a href="https://dl.acm.org/doi/10.1145/3501385.3543967">ACM DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <b>&#127942; Best Paper Award for Diversity & Inclusion Contributions</b> <br>
+                        <a href="./papers/cscw2022-StudentAmp.pdf">Surfacing Equity Issues in Large Computing Courses with Peer-Ranked, Demographically-Labeled Student Feedback</a> <br>
+                        Benjamin Xie, <b>Alannah Oleson</b>, Jayne Everson, Amy J. Ko (2022) <br>
+                        Proceedings of the ACM on Human-Computer Interaction (PACMHCI), presented at ACM Computer-Supported Collaborative Work (CSCW) <br>
+                        [<a href="https://doi.org/10.1145/3512912">ACM DL Link</a>] <br>
+                    </p>
+
+                </div>
+
+
+                <!-- Books -->
+                <div style="margin-top:5%; text-align:justify;">    
+                    <h1 id="books">Books</h1>
+
+                    <p>I have edited or authored chapters in a few online textbooks. Unlike print books, these are free, digital, searchable, interactive, and web-accessible resources. These are living documents that lower barriers to accessing knowledge and best practices within computing education. I plan to continue developing and refining resources like these throughout my academic career.</p>
+
+                    <h3><a href="https://bookish.press/tac">Teaching Accessible Computing</a></h3>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="img/splash_tac.jpg" alt="A person with a visual impairment using a laptop computer with a stylized large text interface.">
+                        </div>
+                        <div class="col-md-9">
+                            A book for computing educators who want to integrate accessible computing concepts and skills into (mostly post-secondary) computer science courses. Each chapter focuses on teaching accessibility in a different CS curriculum course, like data structures, artificial intelligence & machine learning, or human-computer interaction. Includes example activities and teaching resources as well as <i>pedagogical content knowledge</i> about how to teach accessibility topics successfully. I edited this book, led the community-sourced writing effort, and currently am evaluating the book's effectiveness and reach. 
+                        </div>
+                    </div>
+
+                    <h3><a href="https://criticallyconsciouscomputing.org/">Critically Conscious Computing: Methods for Secondary Education</a></h3>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="img/splash_ccc.jpg" alt="A colorful collage of people using different kinds of modern technologies, placed around text that reads Critically Conscious Computing">
+                        </div>
+                        <div class="col-md-9">
+                            A book for secondary educators who want to teach CS from a critical lens, examining it from technical, sociotechnical, and sociopoitical stances. I co-authored <a href="https://criticallyconsciouscomputing.org/design">the chapter on CS and Design</a> that frames computing work as a practice of design-informed engineering. Includes a unit sketch about how to teach computing through critical design approaches. This book is used as the foundation for multiple courses in the University of Washington's justice-centered CS teacher prep program, <a href="https://www.computinged.uw.edu/stepcs/">STEP CS</a>. 
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Teaching -->
+                <div style="margin-top:5%; text-align:justify;">
+                    <h1 id="teaching">Teaching</h1>
+                    <p>These are the courses I teach. Courses I'm actively teaching or developing are closer to the top of the list.</p> 
+
+                    <h3>Human-Computer Interaction</h3>
+                    <p>University of Denver COMP 3/4100 | Teaching Winter 2025, planned Winter 2026 </p>
+                    <p>    
+                        This course covers the foundations of human-computer interaction for undergraduate and graduate students, such as basic HCI theories and principles, protoyping, empirical user research, and critical and ethical perspectives on HCI. Students apply their learning by incrementally building a prototype demonstrating HCI principles then, in groups, further developing and evaluating prototypes through user studies. Through discussions and presentations, students develop their communication skills. Fulfills the Ethics requirement within the undergraduate CS program. 
+                    </p>
+
+                    <h3>Intro to Computer Science I</h3>
+                    <p>University of Denver COMP 1201 | Next planned offering Fall 2025 </p>
+                    <p> 
+                        This introductory (CS0) course introduces undergraduate students to the discipline of computer science beyond programming, discussing topics like algorithmic thinking, career readiness, and ethical perspectives on technology development. Students engage in interactive activities and group discussions to build CS foundations and identities. First in a three-course series. 
+                    </p>
+
+                    <h3>User-Centered Design Methods</h3>
+                    <p>University of Washington INFO 360 | Last taught Spring 2020</p>
+                    <p> 
+                        This undergraduate class teaches students design thinking skills in the domain of information and computing. It leverages multiple forms of active learning, involves a significant amount of studio-based learning, and helps students develop creative confidence. 
+                    </p>
+
+                    <h3>Cooperative Software Development</h3>
+                    <p>University of Washington INFO 442 | Last taught Fall 2020</p>
+                    <p> 
+                        This undergraduate software engineering class teaches foundations of team-based software development, leveraging the latest research on coordination, cooperation, and human cognition in software development. Students leave ready to become meaningful contributors to teams big and small, but also to understand the processes that teams use and how they can improve them. 
+                    </p>
+
+                </div>
+
+
+                <!-- Communities -->
+                <div style="margin-top:5%; text-align:justify;">    
+                    <h1 id="communities">Communities</h1>
+                    <p>I work with these communities to research, advocate, and impact the world beyond academia.</p>
+
+                    <h3><a href="https://educhi2024.educhi.org/">EduCHI Community of Practice</a></h3>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-responsive" src="img/educhi_logo.png" alt="Text reading eduCHI where the I in CHI is replaced with a pencil.">
+                        </div>
+                        <div class="col-md-10">
+                            EduCHI's annual symposium brings together an international community of scholars and practitioners to discuss and shape the future of Human-Computer Interaction (HCI) education. Though small and growing, EduCHI is the leading venue focusing specifically on HCI education. I am on the symposium steering committee and have been a part of this community since 2018, acting in several roles like technical program chair (2023, 2025) and co-organizer of the inagural HCI pedagogy workshop for graduate students and early-career faculty. 
+                        </div>
+                    </div>
+
+                    <h3><a href="https://www.washington.edu/accesscomputing/">AccessComputing</a></h3>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-responsive" src="img/accesscomputing.jpg" alt="The access computing logo, text reading the name of the organization with a decorative swoosh around it.">
+                        </div>
+                        <div class="col-md-10">
+                            First funded by NSF and led by Richard Ladner and Sheryl Burgstahler, AccessComputing creates pathways for students with disabilities into computing. The <a href="https://bookish.press/tac">Teaching Accessible Computing</a> book was created in partnership with this program. I am the AccessComputing partner at the University of Denver, supporting efforts to ensure our programs are accessible and inclusive, and plan to host AccessComputing REUs in the future. 
+                        </div>
+                    </div>
+
+                    <h3><a href="https://dub.uw.edu/">DUB</a></h3>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-responsive" src="img/DUB_bottom_purplegreen.png" alt="A logo with a stylized purple D U and B that says design use build along the bottom.">
+                        </div>
+                        <div class="col-md-10">
+                            DUB is the grassroots community of HCI and design researchers, educators, and industry professionals at the University of Washington. I was part of this community during my time at UW, participating in several community-building activities and acting as a student coordinator for the weekly research seminar in 2019-2020. 
+                        </div>
+                    </div>
+
+                    <h3><a href="https://www.computinged.uw.edu/">ComputingEd@UW</a></h3>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-responsive" src="img/computingedatuw.jpg" alt="The access computing logo, text reading the name of the organization with a decorative swoosh around it.">
+                        </div>
+                        <div class="col-md-10">
+                            ComputingEd@UW is the grassroots community of computing education researchers and educators at the University of Washington, spanning the Paul G. Allen School of Computer Science & Engineering, The Information School, the College of Education, Human-Centered Design and Engineering, and the Department of Communication. I was part of this community as a graduate student and later a postdoc at the Center for Learning, Computing, and Imagination (LCI). 
+                        </div>
+                    </div>
+
+                    <h3><a href="https://eusesconsortium.org/">EUSES Consortium</a></h3>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-responsive" src="img/euses.jpg" alt="The EUSES acronym in stylized script.">
+                        </div>
+                        <div class="col-md-10">
+                            The EUSES Consortium was a former coalition of end-user programming and end-user software engineering researchers. I worked on several of its Gender HCI and inclusive end-user software engineering projects as an undergraduate researcher at Oregon State University.
+                        </div>
+                    </div>
+
+                    <h3><a href="https://stemleaders.oregonstate.edu/">OSU STEM Leaders Program</a></h3>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-responsive" src="img/OSU_logo.svg" alt="Oregon State University's logo, depicting a shield with various icons like a sun, a tree, mountains, a book, and a beaver (the school's mascot).">
+                        </div>
+                        <div class="col-md-10">
+                            The OSU STEM Leaders program began as an NSF-funded effort to promote retention of minoritized students in STEM through cohort-based workshops, peer mentoring, and early reserach experiences. I was part of the very first class of STEM Leaders in 2014 and peer mentored several STEM students from underrepresented backgrounds in 2015-2018.   
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Awards -->
+                <div style="margin-top:5%; text-align:justify;">    
+                    <h1 id="awards">Awards & Honors</h1>
+
+                    <p>I've recieved several awards for various contributions to my research and teaching communities.</p>
+
+                    
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-responsive" src="img/uw_logo.png" alt="University of Washington logo, a purple W.">
+                        </div>
+                        <div class="col-md-10">
+                            <h4>University of Washington Husky 100 (2022)</h4>
+                            <p>Awarded annually to 100 of UW’s 60,000 students who make exceptional contributions to research, teaching, mentorship, and service to the institution. Highest honor available for students.</p> 
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-responsive" src="img/nsf-logo-200px.gif" alt="National Science Foundation Logo">
+                        </div>
+                        <div class="col-md-10">
+                            <h4>NSF Graduate Research Fellowship (2018-2023)</h4>
+                            <p>Recognizes and supports outstanding graduate students in National Science Foundation-supported science, technology, engineering, and mathematics disciplines.</p> 
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-responsive" src="img/cra-logo-square.png" alt="Computing Research Association Logo">
+                        </div>
+                        <div class="col-md-10">
+                            <h4>CRA Outstanding Undergraduate Researcher, Finalist (2018)</h4>
+                            <p>Recognizes undergraduate students in North American colleges and universities who show outstanding research potential in an area of computing research.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-responsive" src="img/Adobe_Systems_logo.png" alt="Adobe Systems Inc. Logo">
+                        </div>
+                        <div class="col-md-10">
+                            <h4>Adobe Research Women-in-Technology Scholar (2017)</h4>
+                            <p>Recognizes outstanding undergraduate and masters students anywhere in the world who study computer science. Led into to an internship at Adobe Research with Cynthia Lu, Jose Echevarria, and Radomir Mech.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div style="margin-top:5%; text-align:justify;">    
+                    <h1 id="contact">Contact Me</h1>
+
+                    <p>
+                        <h3>Office Hours (ECS 371)</h3>
+                        <p>If you are a current DU student enrolled in one of my courses, see the syllabus for office hours information. If you are a DU student but not currently enrolled in my courses, or if you are not a DU student, contact me via email and we will meet if appropriate.</p>
+                        <p>My office is in the <a href="https://maps.app.goo.gl/rzB4TCguZm5MWZVn7">Engineering and Computer Science building</a> on the 3rd floor, room 371.</p>
+                    </p>
+                    <p>
+                        <h3>Email</h3>
+                        <p>My institutional email is <a href="mailto:alannah.oleson@du.edu" target="_blank">alannah.oleson@du.edu</a>. Email is the best way to reach me in many cases. To maintain work-life boundaries, I typically do not check my email on weekends or holidays.</p>
+                    </p>
+                    <p>
+                      <h3>CV</h3>
+                      <p>The most current version of my CV can be found at this link: <a href="./papers/AlannahOleson_CV.pdf" target="_blank">October 2024 CV (pdf)</a></p>
+                    </p>
+                    <p>
+                      <h3>Online profiles</h3>
+                      <ul>
+                        <li><a href="https://scholar.google.com/citations?user=boWvsg8AAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                        <li>Medium: <a href="https://medium.com/@OAlannah" target="_blank">@OAlannah</a>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/aoleson/" target="_blank">aoleson</a></li>
+                        <li>GitHub: <a href="https://github.com/aoleson" target="_blank">aoleson</a></li>
+                        <li>Twitter: <a href="https://twitter.com/OAlannah" target="_blank">@OAlannah</a> (largely inactive)</li>
+                      </ul>
+                    </p>
+                    <p>
+                      <h3>Phone</h3>
+                      I technically have an office phone number that may be discoverable online. Don't call me directly; I will not recieve it in a timely fashion. Instead, email me and we will set up a meeting if appropriate. 
+                    </p>
+                </div>
+
+
+            </div>
+
+            
+        </div>
+
+
+    </div>
+
+    <!-- end container -->
     
-  <!-- About -->
-    <p id="quickLinks">Quick links: 
-        <a class="w3-text-blue w3-hover-text-blue-gray" href="./papers/AlannahOleson_CV.pdf" target="_blank">My CV (updated October 2024)</a>
-        | <a class="w3-text-blue w3-hover-text-blue-gray" href="https://scholar.google.com/citations?user=boWvsg8AAAAJ&hl=en" target="_blank">Google Scholar</a> 
-        | <a class="w3-text-blue w3-hover-text-blue-gray" href="https://medium.com/@OAlannah" target="_blank">Medium Blog</a> 
-        | <a class="w3-text-blue w3-hover-text-blue-gray" href="https://twitter.com/OAlannah" target="_blank">Twitter</a>   
-    </p>
-
-    <!--p id="out_of_office"><b>NOTE:</b> I will be transitioning between jobs from July 2024 to September 2024. During this time I do not intend to conduct any research or respond to requests for service. Until I recieve my DU credentials, the best way to contact me is <a class="w3-text-blue w3-hover-text-blue-gray" href="https://www.linkedin.com/in/aoleson/" target="_blank">LinkedIn</a>, though I may not respond until late summer.</p-->
-
-    <img id="splash_img" src="./images/hci1.png" alt="A sketch of a stick figure person sitting at a desk, writing or drawing. A thought bubble shows they are thinking: bunch of people plus laptop computer equals question mark, intending to signify: humans plus computers equals what?">
-
-    <p>I am a <b>critical HCI education researcher</b>. My work draws upon literature from human-computer interaction (HCI), critical computing education research, justice-centered design theory & methods, and software engineering. I envision a world where <i>everyone</i> can authentically and effectively interact with technology by contributing novel pedagogical methods and strategies for critical computing design education. To do this, I often partner with communities of HCI and computing educators, working to identify pedagogical challenges and evaluate potential solutions.</p>
-
-    <p>In Fall 2024, I started as an Assistant Professor in CS at the <a class="w3-text-blue w3-hover-text-blue-gray" href="https://ritchieschool.du.edu/academics-education/departments/computer-science" target="_blank">Ritchie School of Engineering and Computer Science</a> at the <a class="w3-text-blue w3-hover-text-blue-gray" href="https://www.du.edu/" target="_blank">University of Denver</a>. If you are interested in doing a Ph.D. with me, please email me to see if there are openings in my lab!</p>
-
-    <p>Until June 2024, I was at <a class="w3-text-blue w3-hover-text-blue-gray" href="https://ischool.uw.edu/" target="_blank">the Information School at the University of Washington</a>, working with <a class="w3-text-blue w3-hover-text-blue-gray" href="http://faculty.washington.edu/ajko/" target="_blank">Prof. Amy J. Ko</a> at the Center for Learning, Computing, and Imagination.</p>
-
-    <p>My dissertation work explored how to help computing students think more critically about the technology they create and design more inclusive user interfaces. I created a pedagogical design evaluation technique called <b>CIDER (<i>Critique, Imagine, Design, Expand, Repeat</i>)</b> to help post-secondary HCI students learn to recognize and respond to implicit assumptions about users embedded in technology designs. A mixed-method case study evaluating CIDER’s efficacy in a post-secondary introductory interface design course found that the technique helped significantly increase students’ self-efficacy for inclusive interface design, expand students' concrete understandings of design biases, and even had long-lasting impacts on students' design approaches. Read the <a class="w3-text-blue w3-hover-text-blue-gray" href="https://dl.acm.org/doi/10.1145/3549074" target="_blank">journal paper here</a>, and the <a class="w3-text-blue w3-hover-text-blue-gray" href="https://medium.com/bits-and-behavior/beyond-average-users-building-inclusive-design-skills-with-the-cider-technique-413969544e6d?source=friends_link&sk=6c9184c8a88feae058cfb073a44985f7" target="_blank">blog post with highlights for educators here</a>. I also partnered with a community of computing educators with commitments to justice-centered CS education to evaluate CIDER's efficacy in a variety of computing learning contexts. This publication is forthcoming.</p>
-    <img id="cider_img" src="./images/CIDERstages.jpg" alt="A diagram of the five CIDER stages, with arrows pointing from one to the next. Icons illustrate each stage: A magnifying glass for critique, a thought bubble for imagine, a ruler and pencil for design, two speech bubbles for expand, and two arrows pointing at each other for repeat.">
-    <!--My interdisciplinary approach draws on design education (esp. empathy, creativity), psychology and sociology (esp. perspective-taking, schemas, stereotyping, biases), learning sciences, education, and HCI to enable the creation of <i>inclusive, ethical,</i> and <i>usable</i> software interfaces.-->
-    <p>At the University of Washington, I taught courses in Design Methods and Cooperative Software Development in the UW Information School. UW also recognized my exceptional contributions to research, teaching, service, and mentorship with a 2023 Husky 100 award, the highest honor for students.</p>
-    <p>Prior to attending UW, I was a student at Oregon State University advised by <a class="w3-text-blue w3-hover-text-blue-gray" href="http://web.engr.oregonstate.edu/~burnett/" target="_blank">Prof. Margaret Burnett</a>, researching end-user software engineering and gender-inclusive software design as part of the <a class="w3-text-blue w3-hover-text-blue-gray" href="http://gendermag.org/" target="_blank">GenderMag</a> project. I founded <a class="w3-text-blue w3-hover-text-blue-gray" href="https://sites.google.com/site/gendermagteach/" target="_blank">the GenderMag-Teach effort</a> to understand the pedagogical content knowledge that university-level educators develop as they teach their students the principles of inclusive software design.</p>
-    <p>I am a National Science Foundation (NSF) Graduate Research Fellow and was an Adobe Research undergraduate scholar.</p>
-  </div>
-
-<!-- End page content -->
-</div>
-
 </body>
+
 </html>

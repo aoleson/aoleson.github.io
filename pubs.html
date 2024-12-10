@@ -1,268 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>Dr. Alannah Oleson | University of Denver</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/basics.css">
-<link rel="icon" href="./images/greyLogo_5ptrect.png">
-<script src="js/basics.js"></script>
+<!--
+    Plain-Academic template by Vasilios Mavroudis, with additions by Isabel Papadimitriou
+    Modified by Alannah Oleson
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
 
+<html lang="en">
+<head>
+  <title>Dr. Alannah Oleson | University of Denver</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./img/greyLogo_5ptrect.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+</head>
 <body>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-teal w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
 
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+		</div>
 
-  <div class="w3-container">
-    <img id="headshot" class="w3-round" src="./images/hs_update.jpg" alt="Alannah Oleson profile picture">
-    <h3 id="sidebar_name"><b>Alannah Oleson</b></h3>
-    <h4 id="sidebar_pronouns">they/them // all</h4>
-    <p id="sidebar_info">
-      University of Denver
-      <br/>
-      alannah.oleson@du.edu
-    </p>
-  </div>
-
-  <hr style="width:100%;border:1px solid white;margin:auto;margin-bottom:32px;" class="w3-round">
-
-  <div class="w3-bar-block">
-    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">About</a> 
-    <!--a href="./news.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">News + Updates</a--> 
-    <!--a href="./projects.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Projects</a-->
-    <a href="./pubs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Publications</a> 
-    <a href="./awards.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Awards + Honors</a>  
-    <a href="./contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Contact</a>
-  </div>  
-
-  <!-- div class="w3-bar-block">
-	 <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Design + Photography</a>
-  </div -->
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
   
-  <div id="social-links" class="w3-bar-block centered_paragraph">
-    <a href="https://medium.com/@OAlannah" target="_blank"><i class="fa fa-medium w3-hover-opacity"></i></a> &nbsp;
-    <a href="https://twitter.com/OAlannah" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a> &nbsp;
-    <a href="https://www.linkedin.com/in/aoleson/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a> &nbsp;
-    <a href="https://github.com/aoleson" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a> &nbsp;
-    <a href="mailto:alannah.oleson@du.edu" target="_blank"><i class="fa fa-envelope w3-hover-opacity"></i></a> 
-  </div>
+  <!-- Page Content -->
+    <div class="container">
 
-</nav>
+        <div class="row">
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-teal w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-teal w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Alannah Oleson</span>
-</header>
+            <!-- Contact Info on the Sidebar -->
+            <div class="col-md-3">
+                <img class="img-responsive" src="img/hs_update.jpg" alt="A late 20s person with short dark hair, a bright yellow jacket, and a purple button down shirt smiling while holding a bouquet of sunflowers."><br>
+                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Alannah "AL" Oleson</b></div><br>
+                <p><b>they / any pronouns</b>
+                <p><b>alannah.oleson at du.edu</b><br>
+                <p>Assistant Professor<br>
+                Computer Science<br>
+                University of Denver
+                </p>
+                <dd><a href="https://scholar.google.com/citations?user=boWvsg8AAAAJ&hl=en">Google Scholar</a></dd> 
+                <dd><a href="https://www.linkedin.com/in/aoleson/">LinkedIn</a></dd>
+                <dd><a href="https://medium.com/@OAlannah">Medium</a></dd>
+                <dd><a href="https://github.com/aoleson">GitHub</a></dd>
+                <dd><a href="https://twitter.com/OAlannah">Twitter</a></dd>
+                <dd><a href="./papers/AlannahOleson_CV.pdf" target="_blank">CV (updated Oct'24)</a></dd>
+            </div>
+            
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px;margin-bottom:40px">
+            <!-- Entries Column -->
+            <div class="col-md-9" style="height: 100vh;">
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px">
-    <h1 class="w3-jumbo"><b>Publications.</b></h1>
-    <hr class="w3-round teal_divider">
 
-    <!--p id="out_of_office"><b>NOTE:</b> I will be transitioning between jobs from July 2024 to September 2024. During this time I do not intend to conduct any research or respond to requests for service. Until I recieve my DU credentials, the best way to contact me is <a class="w3-text-blue w3-hover-text-blue-gray" href="https://www.linkedin.com/in/aoleson/" target="_blank">LinkedIn</a>, though I may not respond until late summer.</p-->
+                <!-- Publications -->
+                <div style="margin-top:3%; text-align:justify;">    
+                    <h1 id="publications">Publications</h1>
 
-    <!-- Papers -->
-    <h2 class="w3-text-teal"><b>Peer-reviewed papers.</b></h2>
+                    <h2 style="margin-top:5%;">Journal Articles & Conference Proceedings</h2>
+                    <p>In computer science, disciplinary conferences are considered top-tier venues, on par with journal articles. The below section contains only peer-reviewed, archival works.</p>
 
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/cohen-helpSeeking.pdf" target="_blank"><b>Factors Influencing the Social Help-Seeking Behavior of Introductory Programming Students</b></a></div>
-      <div class="paper_authors w3-large">Anael K. Cohen, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, Amy J. Ko (2024)</div>
-      <div class="paper_details">ACM Transactions on Computing Education (TOCE) [<a href="https://dl.acm.org/doi/full/10.1145/3639059">ACM DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Explored how post-secondary CS students sought assistance on programming assignments, finding that both class policies and sociocultural contexts were important in students’ decisions to seek assistance from others.</i></div>
+                    <p style="margin-top:3%;">
+                        <a href="./papers/cohen-helpSeeking.pdf">Factors Influencing the Social Help-Seeking Behavior of Introductory Programming Students</a> <br>
+                        Anael K. Cohen, <b>Alannah Oleson</b>, Amy J. Ko (2024) <br>
+                        ACM Transactions on Computing Education (TOCE) <br> 
+                        [<a href="https://dl.acm.org/doi/full/10.1145/3639059">ACM DL Link</a>] <br>
+                    </p>
+                    
+                    <p style="margin-top:3%;">
+                        <a href="./papers/tochi22-CiderAssumptionElicitationTechnique.pdf">Teaching Inclusive Design Skills with the CIDER Assumption Elicitation Technique</a> <br>
+                        <b>Alannah Oleson</b>, Meron Solomon, Christopher Perdriau, Amy J. Ko (2023) <br>
+                        ACM Transactions on Computer-Human Interaction (TOCHI) <br>
+                        [<a href="https://dl.acm.org/doi/10.1145/3549074">ACM DL Link</a>] [<a href="https://medium.com/bits-and-behavior/beyond-average-users-building-inclusive-design-skills-with-the-cider-technique-413969544e6d?source=friends_link&sk=6c9184c8a88feae058cfb073a44985f7">Blog Post Summary</a>]<br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <b>&#127942; Best Paper Award</b> <br>
+                        <a href="./papers/Salac2023AdolescentAlgorithmicFairness.pdf">Funds of Knowledge used by Adolescents of Color in Scaffolded Sensemaking around Algorithmic Fairness</a> <br>
+                        Jean Salac, <b>Alannah Oleson</b>, Lena Armstrong, Audrey Le Meur, Amy J. Ko (2023) <br>
+                        ACM International Computing Education Research Conference (ICER) <br>
+                        [<a href="https://dl.acm.org/doi/10.1145/3568813.3600110">ACM DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/icer22-DecadeOfDemographicsReview.pdf">A Decade of Demographics in Computing Education Research: A Critical Review of Trends in Collection, Reporting, and Use</a> <br>
+                        <b>Alannah Oleson</b>*, Benjamin Xie*, Jean Salac, Jayne Everson, F. Megumi Kivuva, Amy J. Ko (2022) <br>
+                        ACM International Computing Education Research Conference (ICER) <br>
+                        [<a href="https://dl.acm.org/doi/10.1145/3501385.3543967">ACM DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <b>&#127942; Best Paper Award for Diversity & Inclusion Contributions</b> <br>
+                        <a href="./papers/cscw2022-StudentAmp.pdf">Surfacing Equity Issues in Large Computing Courses with Peer-Ranked, Demographically-Labeled Student Feedback</a> <br>
+                        Benjamin Xie, <b>Alannah Oleson</b>, Jayne Everson, Amy J. Ko (2022) <br>
+                        Proceedings of the ACM on Human-Computer Interaction (PACMHCI), presented at ACM Computer-Supported Collaborative Work (CSCW) <br>
+                        [<a href="https://doi.org/10.1145/3512912">ACM DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/Oleson2021-OnTheRoleOfDesignInK12ComputingEducation.pdf">On the Role of Design in K-12 Computing Education</a> <br>
+                        <b>Alannah Oleson</b>, Brett Wortzman, Amy J. Ko (2021) <br>
+                        ACM Transactions on Computing Education (TOCE) <br>
+                        [<a href="https://doi.org/10.1145/3427594">ACM DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/chi2020_HCILearningDiffs_final_tagged.pdf">Computing Students' Learning Difficulties in HCI Education</a> <br>
+                        <b>Alannah Oleson</b>, Meron Solomon, Amy J. Ko (2020) <br>
+                        ACM Conference on Human Factors in Computing Systems (CHI) <br>
+                        [<a href="https://dl.acm.org/doi/abs/10.1145/3313831.3376149">ACM DL Link</a>] [<a href="https://medium.com/bits-and-behavior/seven-tips-to-improve-hci-education-fa64db5da4f5">Blog Post Summary</a>]<br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/Swearngin_Scout_CHI_2020_v19.pdf">Scout: Rapid Exploration of Interface Layout Alternatives through High-Level Design Constraints</a> <br>
+                        Amanda Swearngin, Chenglong Wang, <b>Alannah Oleson</b>, James Fogarty, Amy J. Ko (2020) <br>
+                        ACM Conference on Human Factors in Computing Systems (CHI) <br>
+                        [<a href="https://dl.acm.org/doi/abs/10.1145/3313831.3376593">ACM DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/icer18-GenderMag-pckInclusiveDesign-asPrinted.pdf">Pedagogical Content Knowledge for Teaching Inclusive Design</a> <br>
+                        <b>Alannah Oleson</b>, Christopher Mendez, Zoe Steine-Hanson, Claudia Hilderbrand, Christopher Perdriau, Margaret Burnett, Amy J. Ko (2018) <br>
+                        ACM International Computing Education Research Conference (ICER) <br>
+                        [<a href="https://dl.acm.org/doi/abs/10.1145/3230977.3230998">ACM DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/semiAutomatingOrNot-cameraReady.pdf">Semi-Automating (or not) a Socio-Technical Method for Socio-Technical Systems</a> <br>
+                        Christopher Mendez, Zoe Steine Hanson, <b>Alannah Oleson</b>, Amber Horvath, Charles Hill, Claudia Hilderbrand, Anita Sarma, Margaret Burnett (2018) <br>
+                        IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC) <br>
+                        [<a href="https://ieeexplore.ieee.org/abstract/document/8506514">IEEE DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <b>&#127942; Best Paper Honorable Mention</b> <br>
+                        <a href="./papers/chi17-GenderMagPersonas-vs-stereotypes.pdf">Gender-Inclusiveness Personas vs. Stereotyping: Can We Have it Both Ways?</a> <br>
+                        Charles Hill, Maren Haag, <b>Alannah Oleson</b>, Chris Mendez, Nicola Marsden, Anita Sarma, Margaret Burnett (2017) <br>
+                        ACM Conference on Human Factors in Computing Systems (CHI) <br>
+                        [<a href="https://dl.acm.org/doi/abs/10.1145/3025453.3025609">ACM DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/generalized-principles.pdf">General Principles for a Generalized Idea Garden</a> <br>
+                        William Jernigan, Amber Horvath, Michael Lee, Margaret Burnett, Taylor Cuilty, Sandeep Kuttal, Anicia Peters, Irwin Kwan, Faezeh Bahmani, Amy J. Ko, Christopher J. Mendez, <b>Alannah Oleson</b> (2017) <br>
+                        Journal of Visual Languages and Computing (JVLC) <br>
+                        [<a href="https://www.sciencedirect.com/science/article/pii/S1045926X17300708">Elsevier Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/vlhcc16-GenderMag.pdf">GenderMag Experiences in the Field: The Whole, the Parts, and the Workload</a> <br>
+                        Charles Hill, Shannon Ernst, <b>Alannah Oleson</b>, Amber Horvath, Margaret Burnett (2016) <br>
+                        IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC) <br>
+                        [<a href="https://ieeexplore.ieee.org/abstract/document/7739685">IEEE DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/p1449-loksa.pdf">Programming, Problem Solving, and Self-Awareness: Effects of Explicit Guidance</a> <br>
+                        Dastyni Loksa, Amy J. Ko, William Jernigan, <b>Alannah Oleson</b>, Christopher J. Mendez, Margaret M. Burnett (2016) <br>
+                        ACM Conference on Human Factors in Computing Systems (CHI) <br>
+                        [<a href="https://dl.acm.org/doi/abs/10.1145/2858036.2858252">ACM DL Link</a>] <br>
+                    </p>
+
+
+
+                    <h2 style="margin-top:5%;">Edited Books & Book Chapters</h2>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/EUDbook2-2ndEd-theory+EUSE-distrib.pdf">Toward Theory-Based End-User Software Engineering</a> <br>
+                        Margaret Burnett, Todd Kulesza, <b>Alannah Oleson</b>, Shannon Ernst, Laura Beckwith, Jill Cao, William Jernigan, Valentina Grigoreanu (2017) <br>
+                        Chapter in <i>New Perspectives in End-User Development</i>, F. Paterno and V. Wulf, eds. <br>
+                        [<a href="https://link.springer.com/chapter/10.1007/978-3-319-60291-2_10">Springer Link</a>] <br>
+                    </p>
+
+
+
+                    <h2 style="margin-top:5%;">Articles</h2>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/papers/CACM_critCSEd.pdf">It's Time for More Critical CS Education</a> <br>
+                        Amy J. Ko, <b>Alannah Oleson</b>, Mara Kirdani-Ryan, Yim Register, Benjamin Xie, Mina Tari, Matthew Davidson, Stefania Druga, Dastyni Loksa (October 2020) <br>
+                        Communications of the ACM (CACM) <br>
+                        [<a href="https://dl.acm.org/doi/10.1145/3424000">ACM DL Link</a>] <br>
+                    </p>
+
+
+
+                    <h2 style="margin-top:5%;">Patents</h2>
+
+                    <p style="margin-top:3%;">
+                        Smart Guide to Capture Digital Images that Align with a Target Image Model<br>
+                        <b>Alannah Oleson</b>, Radomir Mech, Jose Echevarria, Cynthia (Jingwan) Lu <br>
+                        Filed Feb. 2018 as US15/897,951. Published as US20190253614A1 and US10574881B2. <br>
+                        [<a href="https://patents.google.com/patent/US10574881B2/en">Google Patents Link</a>] <br>
+                    </p>
+
+
+
+                    <h2 style="margin-top:5%;">Workshops & Symposia</h2>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/2023_Grayetal_CHI_EduCHI.pdf">EduCHI 2023: 5th Annual Symposium on HCI Education</a> <br>
+                        Colin Gray, Craig M. MacDonald, Carine Lallemand, <b>Alannah Oleson</b>, Anna R. L. Carter, Olivier St-Cyr, Caroline Pitt (2023) <br>
+                        Organizer for the 5th Annual Symposium on HCI Education @ CHI 2023, the final one before it became a standalone conference <br>
+                        [<a href="https://dl.acm.org/doi/10.1145/3544549.3573790">ACM DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/EduCHI2020_Toward_HCI_PCK.pdf">Toward the Development of HCI Pedagogical Content Knowledge</a> <br>
+                        <b>Alannah Oleson</b>, Amy J. Ko (2020) <br>
+                        EduCHI 2020: 2nd Annual Symposium on HCI Education @ CHI 2020 <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/gmTeach-educhi19.pdf">The GenderMag-Teach Project</a> <br>
+                        Margaret Burnett, Zoe Steine-Hanson, <b>Alannah Oleson</b> (2019) <br>
+                        EduCHI Symposium 2019: Global Perspectives on HCI Education @ CHI 2019 <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/gvlhcc18-workshopPaper-problemSolving.pdf">Gender Biases in Software for Problem-Solving</a> <br>
+                        Margaret Burnett, Anita Sarma, Christopher Mendez, <b>Alannah Oleson</b>, Claudia Hilderbrand, Zoe Steine-Hanson, Amy J. Ko (2018) <br>
+                        Designing Technologies to Support Human Problem Solving Workshop @ VL/HCC 2018 <br>
+                    </p>
+
+
+
+
+                    <h2 style="margin-top:5%;">Dissertation</h2>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/Oleson_dissertation.pdf">Integrating Inclusive Design and Computing Education</a> <br>
+                        Alannah Oleson (2023) <br>
+                        To fulfill requirements of a Ph.D. in Information Science at the University of Washington <br>
+                        [<a href="https://www.proquest.com/docview/2915914933">ProQuest Link</a>] <br>
+                    </p>
+
+
+
+                    <h2 style="margin-top:5%;">Doctoral Consortia</h2>
+
+                    <p style="margin-top:3%;">
+                        <a href="./papers/Oleson-ICERDC-CIDER.pdf">CIDER: A Method to Teach Practical Critical Software Design Skills</a> <br>
+                        Alannah Oleson (2022) <br>
+                        SIGCSE DC @ ACM International Computing Education Research Conference (ICER) <br>
+                        [<a href="https://dl.acm.org/doi/10.1145/3501709.3544295">ACM DL Link</a>] <br>
+                    </p>
+
+                    <p style="margin-top:3%;">
+                        Supporting Critical Software Design Decision-Making in HCI Education <br>
+                        Alannah Oleson (2022) <br>
+                        DUB DC @ the University of Washington <br>
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            
+        </div>
+
+
     </div>
-    <br/>
-
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/tochi22-CiderAssumptionElicitationTechnique.pdf" target="_blank"><b>Teaching Inclusive Design Skills with the CIDER Assumption Elicitation Technique</b></a></div>
-      <div class="paper_authors w3-large"><span class="w3-text-teal"><b>Alannah Oleson</b></span>, Meron Solomon, Christopher Perdriau, Amy J. Ko (2023)</div>
-      <div class="paper_details">ACM Transactions on Computer-Human Interaction (TOCHI) [<a href="https://dl.acm.org/doi/10.1145/3549074">ACM DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Contributes a theoretically-grounded teaching method to help computing students learn to identify design assumptions that exclude marginalized users and a case study evaluation of its efficacy.</i></div>
-    </div>
-    <br/>
-
-    <div class="my_paper">
-      <span class="paper_award w3-teal w3-round">&nbsp; &#9733; &nbsp; Best Paper Award &nbsp;</span>
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/Salac2023AdolescentAlgorithmicFairness.pdf" target="_blank"><b>Funds of Knowledge used by Adolescents of Color in Scaffolded Sensemaking around Algorithmic Fairness</b></a></div>
-      <div class="paper_authors w3-large">Jean Salac, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, L. Armstrong, A. Le Meur, and Amy J. Ko (2023)</div>
-      <div class="paper_details">ACM International Computing Education Research Conference (ICER). </div>
-      <div class="paper_blurb w3-text-grey"><i>Found that youth in a summer camp used a tiered human lens and then technological lens to reason through algorithmic fairness, often invoking facets of their identities and background knowledge.</i></div>
-    </div>
-    <br/>
-
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/icer22-DecadeOfDemographicsReview.pdf" target="_blank"><b>A Decade of Demographics in Computing Education Research: A Critical Review of Trends in Collection, Reporting, and Use</b></a></div>
-      <div class="paper_authors w3-large"><span class="w3-text-teal"><b>Alannah Oleson</b></span>, Benjamin Xie, Jean Salac, Jayne Everson, F. Megumi Kivuva, Amy J. Ko (2022)</div>
-      <div class="paper_details">ACM International Computing Education Research Conference (ICER), 323-343. [<a href="https://dl.acm.org/doi/10.1145/3501385.3543967">ACM DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Reviewed 510 papers for trends in collection, reporting, and use of demographic data, finding that most computing education research studied adults, left out key details of data gathering, and often used imprecise aggregate terms to illustrate diversity that reified hegemonic identity norms.</i></div>
-    </div>
-    <br/>
     
-    <div class="my_paper">
-      <span class="paper_award w3-teal w3-round">&nbsp; &#9733; &nbsp; Best Paper Award for Diversity & Inclusion Contributions &nbsp;</span>
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/cscw2022-StudentAmp.pdf" target="_blank"><b>Surfacing Equity Issues in Large Computing Courses with Peer-Ranked, Demographically-Labeled Student Feedback</b></a></div>
-      <div class="paper_authors w3-large">Benjamin Xie, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, Jayne Everson, Amy J. Ko (2022)</div>
-      <div class="paper_details">Proceedings of the ACM on Human-Computer Interaction (PACMHCI), presented at ACM Computer-Supported Collaborative Work (CSCW). [<a href="https://doi.org/10.1145/3512912">ACM DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Describes the development and evaluation of a tool that contextualizes student feedback using demographic data to help teaching teams identify equity issues within their courses.</i></div>
-    </div>
-    <br/>
-    
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/Oleson2021-OnTheRoleOfDesignInK12ComputingEducation.pdf" target="_blank"><b>On the Role of Design in K-12 Computing Education</b></a></div>
-      <div class="paper_authors w3-large"><span class="w3-text-teal"><b>Alannah Oleson</b></span>, Brett Wortzman, Amy J. Ko (2021)</div>
-      <div class="paper_details">ACM Transactions on Computing Education (TOCE) 21, 1, Article 2, 34 pages. [<a href="https://doi.org/10.1145/3427594">ACM DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Characterizes the ways design skills and activities manifest in K-12 computing curricula and standards, finding that many of these materials conflate program-space (disciplinary) and problem-space (nondisciplinary) design, masking the distinct challenges that arise when learning and teaching problem-space design. Calls for more investigation into the unique intersection of computing and applied design education, with the goal of supporting more critical, ethical computing education.</i></div>
-    </div>
-    <br/>
-
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/chi2020_HCILearningDiffs_final_tagged.pdf" target="_blank"><b>Computing Students' Learning Difficulties in HCI Education</b></a></div>
-      <div class="paper_authors w3-large"><span class="w3-text-teal"><b>Alannah Oleson</b></span>, Meron Solomon, Amy J. Ko (2020)</div>
-      <div class="paper_details">ACM Conference on Human Factors in Computing Systems (CHI), 1-14. [<a href="https://dl.acm.org/doi/abs/10.1145/3313831.3376149">ACM DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Investigates the challenges that computing students face in learning HCI design, finding challenges in understanding design as distinct from engineering, understanding design methods, finding resources to support design, interpreting feedback, scoping design problems, choosing between alternatives, and designing for diversity.</i></div>
-    </div>
-    <br/>
-
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/Swearngin_Scout_CHI_2020_v19.pdf" target="_blank"><b>Scout: Rapid Exploration of Interface Layout Alternatives through High-Level Design Constraints</b></a></div>
-      <div class="paper_authors w3-large">Amanda Swearngin, Chenglong Wang, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, James Fogarty, Amy J. Ko (2020)</div>
-      <div class="paper_details">ACM Conference on Human Factors in Computing Systems (CHI), 1-13. [<a href="https://dl.acm.org/doi/abs/10.1145/3313831.3376593">ACM DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Presents a system to support designers ideation of user interface layouts, allowing designers to provide high-level preferences, obtain a set of layouts that meet those preferences, provide feedback on those preferences, and iteratively converge towards preferred layouts. An evaluation showed that designers who used Scout accelerated ideation and found more diverse designs that designers without it.</i></div>
-    </div>
-    <br/>
-
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/icer18-GenderMag-pckInclusiveDesign-asPrinted.pdf" target="_blank"><b>Pedagogical Content Knowledge for Teaching Inclusive Design</b></a></div>
-      <div class="paper_authors w3-large"><span class="w3-text-teal"><b>Alannah Oleson</b></span>, Christopher Mendez, Zoe Steine-Hanson, Claudia Hilderbrand, Christopher Perdriau, Margaret Burnett, Amy J. Ko (2018)</div>
-      <div class="paper_details">ACM International Computing Education Research Conference (ICER), 69-77. [<a href="https://dl.acm.org/doi/abs/10.1145/3230977.3230998">ACM DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Through observations and interviews with 9 teacher-researchers at 8 U.S. universities, this paper identifies 11 pieces of pedagogical content knowledge for teaching inclusive software design in higher education, including strategies for anticipating and addressing resistance, modeling and scaffolding perspective-taking, and tailoring instruction to students' prior beliefs.</i></div>
-    </div>
-    <br/>
-
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/semiAutomatingOrNot-cameraReady.pdf" target="_blank"><b>Semi-Automating (or not) a Socio-Technical Method for Socio-Technical Systems</b></a></div>
-      <div class="paper_authors w3-large">Christopher Mendez, Zoe Steine Hanson, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, Amber Horvath, Charles Hill, Claudia Hilderbrand, Anita Sarma, Margaret Burnett (2018)</div>
-      <div class="paper_details">IEEE Symposium on Visual Languages and Human-Centric Computing, 23-32. [<a href="https://ieeexplore.ieee.org/abstract/document/8506514">IEEE DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Through a field study and a controlled 92-participant study, discusses the benefits and drawbacks of semi-automating parts of the software inspection process from the perspective of cognitive load.</i></div>
-    </div>
-    <br/>
-
-
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/EUDbook2-2ndEd-theory+EUSE-distrib.pdf" target="_blank"><b>Toward Theory-Based End-User Software Engineering</b></a></div>
-      <div class="paper_authors w3-large">Margaret Burnett, Todd Kulesza, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, Shannon Ernst, Laura Beckwith, Jill Cao, William Jernigan, Valentina Grigoreanu (2017)</div>
-      <div class="paper_details">Chapter in New Perspectives in End-User Development (F. Paterno and V. Wulf, eds.). [<a href="https://link.springer.com/chapter/10.1007/978-3-319-60291-2_10">Springer Link</a>] </div>
-      <div class="paper_blurb w3-text-grey"><i>The field of end-user software engineering (EUSE) has grown to include a large body of literature since the early 2000s, but it can be difficult to build upon projects in the absence of cross-cutting theoretical foundations. We advocate for stronger theoretical foundations and present examples of EUSE projects that successfully went beyond individual tools to produce general methods and principles.</i></div>
-    </div>
-    <br/>
-
-    <div class="my_paper">
-      <span class="paper_award w3-teal w3-round">&nbsp; &#9733; &nbsp; Best Paper Honorable Mention &nbsp;</span>
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/chi17-GenderMagPersonas-vs-stereotypes.pdf" target="_blank"><b>Gender-Inclusiveness Personas vs. Stereotyping: Can We Have it Both Ways?</b></a></div>
-      <div class="paper_authors w3-large">Charles Hill, Maren Haag, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, Chris Mendez, Nicola Marsden, Anita Sarma, Margaret Burnett (2017)</div>
-      <div class="paper_details">ACM Conference on Human Factors in Computing Systems (CHI), 6658-6671. [<a href="https://dl.acm.org/doi/abs/10.1145/3025453.3025609">ACM DL Link</a>] </div>
-      <div class="paper_blurb w3-text-grey"><i>Using multiple profile pictures on one persona may expand product designers' consideration of multiple genders without harming persona engagement or advancing harmful gender stereotypes.</i></div>
-    </div>
-    <br/>
-
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/generalized-principles.pdf" target="_blank"><b>General Principles for a Generalized Idea Garden</b></a></div>
-      <div class="paper_authors w3-large">William Jernigan, Amber Horvath, Michael Lee, Margaret Burnett, Taylor Cuilty, Sandeep Kuttal, Anicia Peters, Irwin Kwan, Faezeh Bahmani, Amy J. Ko, Christopher J. Mendez, <span class="w3-text-teal"><b>Alannah Oleson</b></span> (2017)</div>
-      <div class="paper_details">Journal of Visual Languages and Computing, Vol. 39, 51-65. [<a href="https://www.sciencedirect.com/science/article/pii/S1045926X17300708">Elsevier Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>End-user programmers who are not necessarily interested in learning programming can benefit from a just-in-time help system called the Idea Garden, which is built on the presented generalized architecture.</i></div>
-    </div>
-    <br/>
-
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/vlhcc16-GenderMag.pdf" target="_blank"><b>GenderMag Experiences in the Field: The Whole, the Parts, and the Workload</b></a></div>
-      <div class="paper_authors w3-large">Charles Hill, Shannon Ernst, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, Amber Horvath, Margaret Burnett (2016)</div>
-      <div class="paper_details">IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 199-207. [<a href="https://ieeexplore.ieee.org/abstract/document/7739685">IEEE DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Software practitioners who use the GenderMag method to identify gender-inclusiveness issues in their software interfaces engage with the GenderMag personas at a high rate, but may also detour and introduce recording errors during GenderMag sessions.</i></div>
-    </div>
-    <br/>
-
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/p1449-loksa.pdf" target="_blank"><b>Programming, Problem Solving, and Self-Awareness: Effects of Explicit Guidance</b></a></div>
-      <div class="paper_authors w3-large">Dastyni Loksa, Amy J. Ko, William Jernigan, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, Christopher J. Mendez, Margaret M. Burnett (2016)</div>
-      <div class="paper_details">ACM Conference on Human Factors in Computing Systems (CHI), 1449-1461. [<a href="https://dl.acm.org/doi/abs/10.1145/2858036.2858252">ACM DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Teaching novice programmers explicit problem-solving strategies can positively impact their productivity, self-efficacy, independence, and growth mindset development.</i></div>
-    </div>
-    
-    
-    <!-- Articles -->
-    <br/>
-    <br/>
-    <h2 class="w3-text-teal"><b>Articles.</b></h2>
-   
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/CACM_critCSEd.pdf" target="_blank"><b>It's Time for More Critical CS Education</b></a></div>
-      <div class="paper_authors w3-large">Amy J. Ko, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, Mara Kirdani-Ryan, Yim Register, Benjamin Xie, Mina Tari, Matthew Davidson, Stefania Druga, Dastyni Loksa (October 2020)</div>
-      <div class="paper_details">Communications of the ACM (CACM), Vol. 63, No. 11. [<a href="https://dl.acm.org/doi/10.1145/3424000">ACM DL Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>"By which 'critical' means an intellectual stance of skepticism, centering the consequences, limitations, and unjust impacts of computing in society." Proposes three ideas that computing education needs to center if we want a more equitable world: That computing has limits, that data has limits, and that computer scientists have responsibility for the things they choose to build.</i></div>
-    </div>
-    
-    
-    <!-- Workshops -->
-    <br/>
-    <br/>
-    <h2 class="w3-text-teal"><b>Workshops + Symposia.</b></h2>
-
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/2023_Grayetal_CHI_EduCHI.pdf" target="_blank"><b>EduCHI 2023: 5th Annual Symposium on HCI Education</b></a></div>
-      <div class="paper_authors w3-large">Colin Gray, Craig M. MacDonald, Carine Lallemand, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, Anna R. L. Carter, Olivier St-Cyr, Caroline Pitt (2023)</div>
-      <div class="paper_details">Organizer at the 5th Annual Symposium on HCI Education.</div>
-      <div class="paper_blurb w3-text-grey"><i>Proposal paper for the annual symposium, formatted like a one day conference with research talks and teaching demonstrations.</i></div>
-    </div>
-    
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/EduCHI2020_Toward_HCI_PCK.pdf" target="_blank"><b>Toward the Development of HCI Pedagogical Content Knowledge</b></a></div>
-      <div class="paper_authors w3-large"><span class="w3-text-teal"><b>Alannah Oleson</b></span>, Amy J. Ko (2020)</div>
-      <div class="paper_details">Workshop at EduCHI 2020: 2nd Annual Symposium on HCI Education.</div>
-      <div class="paper_blurb w3-text-grey"><i>Based off prior work of ours on <a href="./papers/chi2020_HCILearningDiffs_final_tagged.pdf" target="_blank">student learning difficulties in HCI education</a>, proposes that to move forward with HCI education, we the community should focus on developing a robust body of HCI pedagogical content knowledge. This "unsolved challenge" paper will be the basis for a collaborative brainstorming session at the symposium.</i></div>
-    </div>
-    
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/gmTeach-educhi19.pdf" target="_blank"><b>The GenderMag-Teach Project</b></a></div>
-      <div class="paper_authors w3-large">Margaret Burnett, Zoe Steine-Hanson, <span class="w3-text-teal"><b>Alannah Oleson</b></span> (2019)</div>
-      <div class="paper_details">Workshop at EduCHI Symposium 2019: Global Perspectives on HCI Education.</div>
-      <div class="paper_blurb w3-text-grey"><i>Describes the origins of the GenderMag-Teach project, focusing on how we established and developed an online community of practice for educators teaching gender-inclusive software interface design.</i></div>
-    </div>
-    
-    <div class="my_paper">
-      <div class="paper_title w3-large w3-text-blue w3-hover-text-blue-gray"><a href="./papers/vlhcc18-workshopPaper-problemSolving.pdf" target="_blank"><b>Gender Biases in Software for Problem-Solving</b></a></div>
-      <div class="paper_authors w3-large">Margaret Burnett, Anita Sarma, Christopher Mendez, <span class="w3-text-teal"><b>Alannah Oleson</b></span>, Claudia Hilderbrand, Zoe Steine-Hanson, Amy J. Ko (2018)</div>
-      <div class="paper_details">Workshop at VL/HCC 2018: Designing Technologies to Support Human Problem Solving.</div>
-      <div class="paper_blurb w3-text-grey"><i>Position paper to call attention to how software can be biased against certain problem-solving styles, espcially those favored by women, and how to address these issues from the perspective of the GenderMag Method (<a href="http://gendermag.org/" target="_blank">http://gendermag.org</a>).</i></div>
-    </div>
-    
-    
-    <!-- Patents -->
-    <br/>
-    <br/>
-    <h2 class="w3-text-teal"><b>Patents.</b></h2>
-
-    <div class="my_paper">
-      <div class="paper_title w3-large"><b>Smart Guide to Capture Digital Images that Align with a Target Image Model</b></div>
-      <div class="paper_authors w3-large"><span class="w3-text-teal"><b>Alannah Oleson</b></span>, Radomir Mech, Jose Echevarria, Cynthia (Jingwan) Lu</div>
-      <div class="paper_details">Filed Feb. 2018 as US15/897,951. Published as US20190253614A1 and US10574881B2. [<a href="https://patents.google.com/patent/US10574881B2/en">Google Patents Link</a>]</div>
-      <div class="paper_blurb w3-text-grey"><i>Motivated by the observation that most smartphone photographers are not trained in portrait photography techniques, this system provides a model for analyzing a device's camera feed as a picture is being taken and guiding the user to achieve a higher-quality selfie or portrait.</i></div>
-    </div>
-
-
-  </div>
-
-<!-- End page content -->
-</div>
-
 </body>
+
 </html>
